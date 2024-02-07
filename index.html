@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>David's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/iconoTab.png">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">David's Portfolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">MAIN</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/fotoPaTodo.jpg" alt="">
+            </div>
+            <h1>David Useche Rosas</h1>
+            <h2>Software Developer | Back-End Developer</h2>
+            <div class="redes">
+                <a href="https://github.com/DavidUseche09"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/david-useche-rosas-843044262/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:daviduseche09@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p>Hello there! <span>I am David Useche R.</span> passionate backend programmer with experience in developing robust and efficient applications. My focus revolves around technologies like <span>Java, databases like MySQL and SpringBoot</span>, where I've applied my knowledge in these areas. I also have knowledge with <span>HTML/CSS and Javascript.</span>
+            <p>💼 My commitment to technical excellence is complemented by a <span>friendly and collaborative</span> attitude, allowing me to work effectively in multidisciplinary teams.</p>
+            <p>🔧 I enjoy delving into the design and implementation of systems, optimizing performance, and proactively solving problems. As a trustworthy and results-oriented individual, I strive to exceed expectations and deliver <span>high-quality solutions.</span></p>
+            <p>🚀 I'm excited to continue growing professionally and contribute to the success of innovative projects. Connect with me, and let's explore how we can collaborate to take your ideas to the next level!</p>
+            <p>🧠 I possess an <span>advanced level of English (B2)</span>, certified by the Cambridge international exam, which can facilitate communication with international projects..</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Info</h3>
+                    <ul>
+                        <li>
+                            <strong>Phone Number</strong>
+                            +57 305-391-6365
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            daviduseche09@gmail.com
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            https://github.com/DavidUseche09
+                        </li>
+                        <li>
+                            <strong>LinkdIn</strong>
+                            www.linkedin.com/in/davidusecher
+                        </li>
+                        <li>
+                            <strong>Country</strong>
+                            Colombia, Bogota D.C
+                        </li>
+                        <li>
+                            <strong>Position</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRIPS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                            <span>COFFEE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SPORTS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>CARS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>MOVIES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button><a href="Hoja de vida.pdf" download="Résumé">
+                Download CV </a><i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills"> 
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SpringBoot</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TeamWork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Résumé</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Coding and programming Back-End Bootcamp</h4>
+                        <span class="casa">MAKAIA</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>In the MAKAIA bootcamp I learned a wide range of skills in API development and microservices management, which included the use of Java, SpringBoot, and other technologies in addition to API development. Through my experience of developing different projects with my colleagues, I have gained a deeper understanding of the nature of web services, which helped me refine my skills as a Back-End developer. I assembled and created several services to test my creative and logical skills by fulfilling the client's requirements.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>English Language</h4>
+                        <span class="casa">Academy of languages Smart</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>SMART Language Academy allowed me to learn and become certified in English from A1 to C1 along with the Cambridge International Certificate. Conversational and formal management in different fields, allowing me to communicate accurately and effectively with my friends, colleagues and teachers both spoken and written.  </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Wide variety of Platzi Courses</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2022-2024 (Endless-learning)</span>
+                        <p>Thanks to the Platzi platform I have completed and certified different courses oriented to programming which have given me the basis to create, modify and learn in the process of different programs using different technologies such as Java, Javascript, HTML, CSS and others. It is an endless study because I always find something interesting to improve or learn every day.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4>Back-End Developer</h4>
+                        <span class="casa">Betek.la</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>As a Back-End developer I worked on the creation of a functional api for the registration and application of applicants to the bootcamp, connected to a stable and robust database.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/MicroservicioAmistadSnap.png" alt="">
+                    <div class="overlay">
+                        <h3>Social Network Microservice</h3>
+                        <p>Program Simulating a social network that sends and receives messages between users</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/YardSaleCostumeSnap.png" alt="">
+                    <div class="overlay">
+                        <h3>YardSale FrontPage Costume</h3>
+                        <p>Automotive online store using Javascript, HTML and CSS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/MakaiaFinalProyectSnap.png" alt="">
+                    <div class="overlay">
+                        <h3>Form interactive program Microservice</h3>
+                        <p>Microservice able to manage applicants to apply to the MAKAIA bootcamp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT ME</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Your name here">
+                    <input type="text" placeholder="Phone Number here">
+                    <input type="text" placeholder="Email here">
+                    <input type="text" placeholder="Title">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/MapsImage.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia, Bogota D.C
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Hit me up!: +57 305-391-6365 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: daviduseche09@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/DavidUseche09"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/david-useche-rosas-843044262/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:daviduseche09@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
