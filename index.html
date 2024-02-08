@@ -321,15 +321,17 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Your name here">
-                    <input type="text" placeholder="Phone Number here">
-                    <input type="text" placeholder="Email here">
-                    <input type="text" placeholder="Title">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button>
-                        Send Message <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form action="send.php" method="post">
+                        <input type="text" name="name" placeholder="Your name here">
+                        <input type="text" name="phone" placeholder="Phone Number here">
+                        <input type="text" name="mail" placeholder="Email here">
+                        <input type="text" name="title" placeholder="Title">
+                        <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">

@@ -612,6 +612,11 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
+.contacto button a{
+    text-decoration: none;
+    color: #fff;
+}
+/* FOOTER  */
 footer{
     background-color: #252A2E;
     color: #fff;
