@@ -498,6 +498,10 @@ html{
     margin: 10px;
     cursor: pointer;
 }
+.portfolio .galeria .proyecto a{
+    text-decoration: none;
+    color: #fff
+}
 .portfolio .galeria .proyecto img{
     width: 100%;
     display: block;
@@ -553,6 +557,7 @@ html{
     position: relative;
 }
 .contacto .col input, .contacto .col textarea{
+    resize: none;
     display: block;
     width: 100%;
     padding: 18px;
